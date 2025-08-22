@@ -29,7 +29,6 @@ async def on_message(message):
 
     if message.author == client.user:
         return
-        return
     
     if message.content.startswith(f"<@{client.user.id}>"):
         message_pin = await client.get_channel(message.channel.id).fetch_message(message.reference.message_id)
